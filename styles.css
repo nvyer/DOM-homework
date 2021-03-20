@@ -1,0 +1,160 @@
+body {
+    margin: 0px;
+}
+
+.main {
+    background-color: #000000eb;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* flex-direction: column; */
+}
+
+.input-container {
+    background-color: white;
+    border-radius: 5%;
+    text-align: center;
+    padding: 50px 30px;
+}
+
+.email-input {
+    display: block;
+    margin-left: 50px;
+    margin-top: 43px;
+    height: 38px;
+    width: 300px;
+    background-color: white;
+    border-color: #000000eb;
+    font-size: 16px;
+}
+
+.phone-number-input {
+    margin-left: 50px;
+    display: block;
+    height: 38px;
+    width: 300px;
+    background-color: white;
+    border-color: #000000eb;
+    font-size: 16px;
+}
+
+.change::placeholder {
+    color: #ffff;
+}
+
+.email-error {
+    visibility: hidden;
+    padding-left: 10px;
+    background-color: #141414c2;
+    border: 2px solid #141414;
+    display: block;
+    margin-top: -19px;
+    width: 292px;
+    margin-left: 50px;
+    height: 21px;
+    margin-bottom: 14px;
+}
+
+.phone-number-error {
+    visibility: hidden;
+    background-color: #141414c2;
+    border: 2px solid #141414;
+    display: block;
+    padding-left: 10px;
+    margin-top: -19px;
+    margin-bottom: 27px;
+    width: 292px;
+    margin-left: 50px;
+    height: 21px;
+}
+
+.submit-btn {
+    cursor: pointer;
+    margin-left: 108px;
+    padding: 10px;
+    text-align: center;
+    display: block;
+    background-color: #00c9ffc2;
+    border-top: #00c9ffc2;
+    border-bottom: #00c9ffc2;
+    border-left: #00c9ffc2;
+    border-right: #00c9ffc2;
+    font-weight: bold;
+    color: white;
+    font-size: 21px;
+    width: 178px;
+}
+
+.text {
+    font-size: 20px;
+    font-weight: normal;
+    letter-spacing: 0.04em;
+}
+
+.modal {
+    visibility: hidden;
+    position: fixed;
+    display: flex;
+    background-color: #00000054;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 133vw;
+    height: 134vh;
+}
+
+.modal-header {
+    width: 400px;
+    background-color: white;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.modal-header button {
+    margin: 10px 10px;
+}
+
+.modal-main {
+    background-color:  #73e1ff;
+    text-align: center;
+    font-size: 25px;
+    width: 400px;
+}
+
+.modal-main p {
+    font-size: 30px;
+    color: #141414;
+}
+
+hr {
+    margin-left: 63px;
+    margin-right: 63px;
+    margin-bottom: 0px;
+}
+
+.modal-footer {
+    width: 400px;   
+    display: flex;
+    justify-content: center;
+    background-color:  #73e1ff;
+}
+
+.okay-btn {
+    cursor: pointer;
+    border-radius: 7%;
+    margin: 16px 7px;
+    color: #141414;
+    padding: 10px 24px;
+    background-color: white;
+    border: 0px;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.close-icon {
+    fill: grey;
+    margin: 3px 5px;
+    cursor: pointer;
+}
