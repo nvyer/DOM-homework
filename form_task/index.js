@@ -17,28 +17,32 @@ const validatedEmail = email.addEventListener("input", (event) => {
   if (!re.test(event.target.value)) {
     emailError.style.visibility = "visible";
   } else {
+    validInputs.email = true;
     emailError.style.visibility = "hidden";
   }
 
   if (event.target.value.length === 0) {
+    validInputs.phoneNumber = false;
     emailError.style.visibility = "hidden";
   }
 
-  validInputs.email = true;
 });
 
 const validatedPhoneNumber = phoneNumber.addEventListener("input", (event) => {
   if (isNaN(event.data)) {
     phoneNumberError.style.visibility = "visible";
   } else {
+    validInputs.phoneNumber = true;
     phoneNumberError.style.visibility = "hidden";
   }
 
   if (event.target.value.length === 0) {
+    validInputs.phoneNumber = false;
     phoneNumberError.style.visibility = "hidden";
   }
 
   if (event.data === "+" && event.target.value.includes("+")) {
+    validInputs.phoneNumber = true;
     event.target.value = event.target.value.slice(
       0,
       event.target.value.length - 1
@@ -47,7 +51,6 @@ const validatedPhoneNumber = phoneNumber.addEventListener("input", (event) => {
   }
   const normalizedValue = event.target.value.replace("+", "");
   event.target.value = `+${normalizedValue}`;
-  validInputs.phoneNumber = true;
 });
 
 window.onclick = function (event) {
